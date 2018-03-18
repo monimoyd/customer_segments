@@ -1,6 +1,9 @@
 # Content: Unsupervised Learning
 ## Project: Creating Customer Segments
 
+### Project Overview
+In this project I applied unsupervised learning techniques on product spending data collected for customers of a wholesale distributor in Lisbon, Portugal to identify customer segments hidden in the data. I first explored the data by selecting a small subset to sample and determine if any product categories highly correlate with one another. Afterwards, I preprocess the data by scaling each product category and then identifying (and removing) unwanted outliers. With the good, clean customer spending data, I applied PCA transformations to the data and implement Gaussian Mixture Model (GMM) clustering algorithms to segment the transformed customer data and choose the cluster with best Silhouette Score. Finally, I compared the segmentation found with an additional labeling to verify the clustering done. Also, I suggested A/B testing so as to assist the wholesale distributor with future service schedule from five days a week to 3 days a week. Finally, I suggested a way to use supervised learning algorithm which can be used for the same problem in future.
+
 ### Install
 
 This project requires **Python 2.7** and the following Python libraries installed:
@@ -16,8 +19,9 @@ If you do not have Python installed yet, it is highly recommended that you insta
 
 ### Code
 
-Template code is provided in the `customer_segments.ipynb` notebook file. You will also be required to use the included `visuals.py` Python file and the `customers.csv` dataset file to complete your work. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in `visuals.py` is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
+The main code`customer_segments.ipynb` notebook file. You will also be required to use the included `visuals.py` Python file which performs rendering of output. `customers.csv` dataset  440 data points collected on data found from clients of a wholesale distributor in Lisbon, Portugal. Additionally report.html file contains a snapshot of the main code in the jupyter notebook with all code cells executed. 
 
+Thanks to Udacity for some of the code and datasets used in this project
 ### Run
 
 In a terminal or command window, navigate to the top-level project directory `customer_segments/` (that contains this README) and run one of the following commands:
